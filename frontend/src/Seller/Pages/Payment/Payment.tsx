@@ -1,0 +1,28 @@
+import { Button, Card, Divider } from "@mui/material";
+import React from "react";
+import TransactionTable from "./TransactionTable";
+
+const Payment = () => {
+  return (
+    <div className="space-y-5">
+      <Card className="rounded-md space-y-4 p-5">
+        <h1 className="text-gray-600 font-medium">Total Earnings</h1>
+        <h1 className="font-bold text-xl pb-1">₹ 11456</h1>
+        <Divider />
+        <p className="text-gray-600 font-medium pt-1">
+          Last Payment : <strong>₹0</strong>
+        </p>
+      </Card>
+      <div className="space-y-5 pt-10">
+        <div>
+          <Button variant="contained">Transaction</Button>
+        </div>
+        <div>
+          <TransactionTable />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Payment;

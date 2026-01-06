@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+  --color-primary-color: #00927c;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 400;
+  font-style: normal;
+  color: var(--color-primary-color);
+}
